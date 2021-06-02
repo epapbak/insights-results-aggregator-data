@@ -192,9 +192,8 @@ var (
 			PythonModule: string(Rule1.Module),
 		},
 		ErrorKeys: map[string]types.RuleErrorKeyContent{
-			ErrorKey1: {
-				Generic:   RuleErrorKey1.Generic,
-				TotalRisk: (RuleErrorKey1.Impact + RuleErrorKey1.Likelihood) / 2,
+			"ek1": {
+				Generic: RuleErrorKey1.Generic,
 				Metadata: types.ErrorKeyMetadata{
 					Condition:   RuleErrorKey1.Condition,
 					Description: RuleErrorKey1.Description,
@@ -219,9 +218,8 @@ var (
 			PythonModule: string(Rule2.Module),
 		},
 		ErrorKeys: map[string]types.RuleErrorKeyContent{
-			ErrorKey2: {
-				Generic:   RuleErrorKey2.Generic,
-				TotalRisk: (RuleErrorKey2.Impact + RuleErrorKey2.Likelihood) / 2,
+			"ek2": {
+				Generic: RuleErrorKey2.Generic,
 				Metadata: types.ErrorKeyMetadata{
 					Condition:   RuleErrorKey2.Condition,
 					Description: RuleErrorKey2.Description,
@@ -246,9 +244,8 @@ var (
 			PythonModule: string(Rule3.Module),
 		},
 		ErrorKeys: map[string]types.RuleErrorKeyContent{
-			ErrorKey3: {
-				Generic:   RuleErrorKey3.Generic,
-				TotalRisk: (RuleErrorKey3.Impact + RuleErrorKey3.Likelihood) / 2,
+			"ek3": {
+				Generic: RuleErrorKey3.Generic,
 				Metadata: types.ErrorKeyMetadata{
 					Condition:   RuleErrorKey3.Condition,
 					Description: RuleErrorKey3.Description,
@@ -274,8 +271,7 @@ var (
 		},
 		ErrorKeys: map[string]types.RuleErrorKeyContent{
 			ErrorKey4: {
-				Generic:   RuleErrorKey4.Generic,
-				TotalRisk: (RuleErrorKey4.Impact + RuleErrorKey4.Likelihood) / 2,
+				Generic: RuleErrorKey4.Generic,
 				Metadata: types.ErrorKeyMetadata{
 					Condition:   RuleErrorKey4.Condition,
 					Description: RuleErrorKey4.Description,
@@ -301,8 +297,7 @@ var (
 		},
 		ErrorKeys: map[string]types.RuleErrorKeyContent{
 			ErrorKey5: {
-				Generic:   RuleErrorKey5.Generic,
-				TotalRisk: (RuleErrorKey5.Impact + RuleErrorKey5.Likelihood) / 2,
+				Generic: RuleErrorKey5.Generic,
 				Metadata: types.ErrorKeyMetadata{
 					Condition:   RuleErrorKey5.Condition,
 					Description: RuleErrorKey5.Description,
@@ -316,7 +311,7 @@ var (
 		},
 	}
 	RuleErrorKey1 = types.RuleErrorKey{
-		ErrorKey:    ErrorKey1,
+		ErrorKey:    "ek1",
 		RuleModule:  Rule1ID,
 		Condition:   "condition1",
 		Description: "description1",
@@ -328,7 +323,7 @@ var (
 		Tags:        []string{"openshift", "service_availability", "osd_customer"},
 	}
 	RuleErrorKey2 = types.RuleErrorKey{
-		ErrorKey:    ErrorKey2,
+		ErrorKey:    "ek2",
 		RuleModule:  Rule2ID,
 		Condition:   "condition2",
 		Description: "description2",
@@ -339,7 +334,7 @@ var (
 		Generic:     "generic2",
 	}
 	RuleErrorKey3 = types.RuleErrorKey{
-		ErrorKey:    ErrorKey3,
+		ErrorKey:    "ek3",
 		RuleModule:  Rule3ID,
 		Condition:   "condition3",
 		Description: "description3",
